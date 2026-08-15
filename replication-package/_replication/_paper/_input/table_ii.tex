@@ -1,0 +1,21 @@
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+
+%\begin{tabular*}{\textwidth}{@{\extracolsep{\fill} } l c c c c c c}
+\begin{tabular*}{\textwidth}{l C{1.97cm} C{1.97cm} C{1.97cm} C{1.97cm} C{1.97cm} C{1.97cm}}
+\toprule \toprule\\[-1.8ex]
+& \multicolumn{5}{c}{Panel (a): Level of Moments}\\
+& $\sigma(K)$ & $\sigma(Y)$ & $\sigma(I)$ & $\sigma(C)$ &$\text{Cor}(C,Y)$ \\
+\cline{2-6} \\[-1.8ex]
+Benchmark  Model                  & 5.05 & 3.38 & 11.98 & 1.25 & 0.70 \\
+[1em] Exogenous Information  & 4.19 & 3.22 & 11.56 & 1.19 & 0.67  \\
+[1em] Full Information              & 3.07 & 3.04 & 10.54 & 1.19 & 0.72  \\
+\hline
+&&&\\
+& \multicolumn{5}{c}{Panel (b): Percent  Difference w.r.t. Full Information} \\ 
+& $\sigma(K)$ & $\sigma(Y)$ & $\sigma(I)$ & $\sigma(C)$ & $\text{Cor}(C,Y)$  \\
+\cline{2-6}\\[-1.8ex]
+Benchmark Model                    & 64.28 & 11.04 & 13.63 & 5.11 & -3.07\\ 
+[1em]  Exogenous Information & 36.46 & 5.84 & 9.65 & 0.31 & -7.24\\ 
+\bottomrule
+\bottomrule
+\end{tabular*}

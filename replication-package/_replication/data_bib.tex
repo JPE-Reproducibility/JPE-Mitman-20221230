@@ -1,0 +1,182 @@
+% =========================================================================
+% BibTeX data citations for
+% "Expectation and Wealth Heterogeneity in the Macroeconomy"
+%
+% Every dataset used in the paper is cited here, as required by the JPE.
+% Rename to data_bib.bib and \bibliography{literature,data_bib}, or copy
+% these entries into the main .bib file (they are already merged into
+% _paper/literature.bib).
+%
+% Series read directly by the code:
+%   CPIAUCSL, CPILFESL   -> _data/table_a10.R, _aux/sce_data.R, _aux/bvar_data.R
+%   CSUSHPINSA           -> _data/_aux/sce_data.R
+%   UNRATE               -> _data/_aux/bvar_data.R, _aux/spf_data.m
+%   CE16OV, CNP16OV      -> _data/_aux/bvar_data.R
+%   FEDFUNDS, GDPC1      -> _data/_aux/bvar_data.R
+%   PRS85006023          -> _data/_aux/bvar_data.R
+% Series read via _data/_data/business_cycle_data.xlsx by _data/table_b2_a.m:
+%   A939RX0Q048SBEA, A794RX0Q048SBEA, NFIRSAXDCUSQ, RKNANPUSA666NRUG
+% =========================================================================
+
+%% ---- Surveys -----------------------------------------------------------
+
+@misc{data_sce,
+  author       = {{Federal Reserve Bank of New York}},
+  title        = {Survey of Consumer Expectations ({SCE})},
+  year         = {2026},
+  howpublished = {Federal Reserve Bank of New York [distributor]},
+  url          = {https://www.newyorkfed.org/microeconomics/sce},
+  note         = {Accessed 1 January 2026. Core monthly expectations module and supplemental household finances module; merged sample period in the paper: 2013M8--2020M1}
+}
+
+@misc{data_spf,
+  author       = {{Federal Reserve Bank of Philadelphia}},
+  title        = {Survey of Professional Forecasters ({SPF})},
+  year         = {2026},
+  howpublished = {Federal Reserve Bank of Philadelphia [distributor]},
+  url          = {https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/survey-of-professional-forecasters},
+  note         = {Accessed 1 January 2026}
+}
+
+@misc{data_psid,
+  author       = {{Survey Research Center, Institute for Social Research, University of Michigan}},
+  title        = {Panel Study of Income Dynamics ({PSID}), Public Use Dataset},
+  year         = {2026},
+  howpublished = {University of Michigan [distributor]},
+  url          = {https://psidonline.isr.umich.edu/},
+  note         = {Accessed 1 January 2026. Extract for 2004--2010 obtained from the replication materials of Krueger, Mitman, and Perri (2016)}
+}
+
+@misc{data_cps,
+  author       = {{U.S. Census Bureau and U.S. Bureau of Labor Statistics}},
+  title        = {Current Population Survey ({CPS})},
+  year         = {2026},
+  howpublished = {U.S. Census Bureau [distributor]},
+  url          = {https://www.census.gov/programs-surveys/cps.html},
+  note         = {Accessed 1 January 2026. Used for U.S. labor-market transition rates (unemployment-to-employment flows)}
+}
+
+%% ---- Prices and house prices -------------------------------------------
+
+@misc{data_fred_cpiaucsl,
+  author       = {{U.S. Bureau of Labor Statistics}},
+  title        = {Consumer Price Index for All Urban Consumers: All Items in {U.S.} City Average [{CPIAUCSL}]},
+  year         = {2026},
+  howpublished = {Retrieved from {FRED}, Federal Reserve Bank of St.\ Louis},
+  url          = {https://fred.stlouisfed.org/series/CPIAUCSL},
+  note         = {Accessed 1 January 2026}
+}
+
+@misc{data_fred_cpilfesl,
+  author       = {{U.S. Bureau of Labor Statistics}},
+  title        = {Consumer Price Index for All Urban Consumers: All Items Less Food and Energy in {U.S.} City Average [{CPILFESL}]},
+  year         = {2026},
+  howpublished = {Retrieved from {FRED}, Federal Reserve Bank of St.\ Louis},
+  url          = {https://fred.stlouisfed.org/series/CPILFESL},
+  note         = {Accessed 1 January 2026. Used for the core-inflation comparison in Table A.10}
+}
+
+@misc{data_fred_csushpinsa,
+  author       = {{S\&P Dow Jones Indices LLC}},
+  title        = {S\&{P} {C}oreLogic {C}ase-{S}hiller {U.S.} National Home Price Index [{CSUSHPINSA}]},
+  year         = {2026},
+  howpublished = {Retrieved from {FRED}, Federal Reserve Bank of St.\ Louis},
+  url          = {https://fred.stlouisfed.org/series/CSUSHPINSA},
+  note         = {Accessed 1 January 2026. Used to compute realized house-price growth for household forecast errors}
+}
+
+%% ---- Labor market ------------------------------------------------------
+
+@misc{data_fred_unrate,
+  author       = {{U.S. Bureau of Labor Statistics}},
+  title        = {Unemployment Rate [{UNRATE}]},
+  year         = {2026},
+  howpublished = {Retrieved from {FRED}, Federal Reserve Bank of St.\ Louis},
+  url          = {https://fred.stlouisfed.org/series/UNRATE},
+  note         = {Accessed 1 January 2026. Real-time vintages retrieved from {ALFRED}, https://alfred.stlouisfed.org/series?seid=UNRATE}
+}
+
+@misc{data_fred_prs85006023,
+  author       = {{U.S. Bureau of Labor Statistics}},
+  title        = {Nonfarm Business Sector: Hours Worked for All Workers [{PRS85006023}]},
+  year         = {2026},
+  howpublished = {Retrieved from {FRED}, Federal Reserve Bank of St.\ Louis},
+  url          = {https://fred.stlouisfed.org/series/PRS85006023},
+  note         = {Accessed 1 January 2026}
+}
+
+@misc{data_fred_ce16ov,
+  author       = {{U.S. Bureau of Labor Statistics}},
+  title        = {Employment Level [{CE16OV}]},
+  year         = {2026},
+  howpublished = {Retrieved from {FRED}, Federal Reserve Bank of St.\ Louis},
+  url          = {https://fred.stlouisfed.org/series/CE16OV},
+  note         = {Accessed 1 January 2026}
+}
+
+@misc{data_fred_cnp16ov,
+  author       = {{U.S. Bureau of Labor Statistics}},
+  title        = {Population Level [{CNP16OV}]},
+  year         = {2026},
+  howpublished = {Retrieved from {FRED}, Federal Reserve Bank of St.\ Louis},
+  url          = {https://fred.stlouisfed.org/series/CNP16OV},
+  note         = {Accessed 1 January 2026}
+}
+
+%% ---- Monetary policy ---------------------------------------------------
+
+@misc{data_fred_fedfunds,
+  author       = {{Board of Governors of the Federal Reserve System (US)}},
+  title        = {Federal Funds Effective Rate [{FEDFUNDS}]},
+  year         = {2026},
+  howpublished = {Retrieved from {FRED}, Federal Reserve Bank of St.\ Louis},
+  url          = {https://fred.stlouisfed.org/series/FEDFUNDS},
+  note         = {Accessed 1 January 2026}
+}
+
+%% ---- National accounts and capital (Table B.2, panel a) ----------------
+
+@misc{data_fred_gdpc1,
+  author       = {{U.S. Bureau of Economic Analysis}},
+  title        = {Real Gross Domestic Product [{GDPC1}]},
+  year         = {2026},
+  howpublished = {Retrieved from {FRED}, Federal Reserve Bank of St.\ Louis},
+  url          = {https://fred.stlouisfed.org/series/GDPC1},
+  note         = {Accessed 1 January 2026}
+}
+
+@misc{data_fred_a939rx0q048sbea,
+  author       = {{U.S. Bureau of Economic Analysis}},
+  title        = {Real Gross Domestic Product Per Capita [{A939RX0Q048SBEA}]},
+  year         = {2026},
+  howpublished = {Retrieved from {FRED}, Federal Reserve Bank of St.\ Louis},
+  url          = {https://fred.stlouisfed.org/series/A939RX0Q048SBEA},
+  note         = {Accessed 1 January 2026. Output series in the business-cycle moments of Table B.2, panel (a)}
+}
+
+@misc{data_fred_a794rx0q048sbea,
+  author       = {{U.S. Bureau of Economic Analysis}},
+  title        = {Real Personal Consumption Expenditures Per Capita [{A794RX0Q048SBEA}]},
+  year         = {2026},
+  howpublished = {Retrieved from {FRED}, Federal Reserve Bank of St.\ Louis},
+  url          = {https://fred.stlouisfed.org/series/A794RX0Q048SBEA},
+  note         = {Accessed 1 January 2026. Consumption series in the business-cycle moments of Table B.2, panel (a)}
+}
+
+@misc{data_fred_nfirsaxdcusq,
+  author       = {{International Monetary Fund}},
+  title        = {Real Gross Fixed Capital Formation for United States [{NFIRSAXDCUSQ}]},
+  year         = {2026},
+  howpublished = {Retrieved from {FRED}, Federal Reserve Bank of St.\ Louis},
+  url          = {https://fred.stlouisfed.org/series/NFIRSAXDCUSQ},
+  note         = {Accessed 1 January 2026. Investment series in the business-cycle moments of Table B.2, panel (a)}
+}
+
+@misc{data_fred_rknanpusa666nrug,
+  author       = {{University of Groningen and University of California, Davis}},
+  title        = {Capital Stock at Constant National Prices for United States [{RKNANPUSA666NRUG}]},
+  year         = {2026},
+  howpublished = {Retrieved from {FRED}, Federal Reserve Bank of St.\ Louis},
+  url          = {https://fred.stlouisfed.org/series/RKNANPUSA666NRUG},
+  note         = {Accessed 1 January 2026. Capital series in the business-cycle moments of Table B.2, panel (a); from the Penn World Table}
+}

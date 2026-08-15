@@ -1,0 +1,29 @@
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l c c c c c}
+\hline\hline\\[-1.8ex]
+& \multicolumn{5}{c}{Panel (a): U.S. Data (1947Q1-2024Q4)}\\
+\hline 
+Variable ($x$) &  $\sigma_x$  &  $\sigma_x/\sigma_y$ &  $\text{Corr}(x_t, x_{t-1})$ & $\text{Corr}(x_t, y_{t})$ & $\text{Corr}(x_t, y_{t-1})$ \\
+\hline
+Output ($y$)                   & 1.64  & 1.00 & 0.79  & 1.00  & 0.79\\
+[1em] Investment 	   & 7.26 & 4.42  & 0.78 & 0.82  & 0.61 \\
+[1em] Consumption.    & 1.39  & 0.85  & 0.72  & 0.79 & 0.54 \\
+\hline
+& \multicolumn{5}{c}{Panel (b): Benchmark Model }\\
+\hline 
+Variable ($x$) &  $\sigma_x$  &  $\sigma_x/\sigma_y$ &  $\text{Corr}(x_t, x_{t-1})$ & $\text{Corr}(x_t, y_{t})$ & $\text{Corr}(x_t, y_{t-1})$ \\
+\hline
+Output  ($y$)                &  3.38  & 1.00 & 0.83 & 1.00 & 0.83 \\ 
+[1em] Investment         & 11.93  & 3.53 & 0.76 & 0.97 & 0.75 \\  
+[1em] Consumption      & 1.25   & 0.37 & 1.00 & 0.70 & 0.72 \\ 
+\hline
+& \multicolumn{5}{c}{Panel (c): Full Information}\\
+\hline 
+Variable ($x$) &  $\sigma_x$  &  $\sigma_x/\sigma_y$ &  $\text{Corr}(x_t, x_{t-1})$ & $\text{Corr}(x_t, y_{t})$ & $\text{Corr}(x_t, y_{t-1})$ \\
+\hline
+Output  ($y$)                & 3.04 & 1.00 & 0.78 & 1.00 & 0.78 \\ 
+[1em] Investment         & 10.52 & 3.46 & 0.72 & 0.97 & 0.70 \\  
+[1em] Consumption      & 1.19 & 0.39 & 0.98 & 0.72 & 0.72 \\ 
+\hline
+\hline
+\end{tabular*}
