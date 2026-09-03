@@ -1,0 +1,22 @@
+Table A.8: Test for the Monotonicity of Regression Coefficients
+================================================================
+                                   Unemployment Forecasts
+                                Left-hand side   Right-hand side
+----------------------------------------------------------------
+Figure 1 (Panel a and b)                  0.01              0.32
+Figure 1 (Panel c and d)                 <0.01             <0.01
+                                    Inflation Forecasts
+                                 Panel a (lhs)     Panel a (rhs)
+----------------------------------------------------------------
+Figure 2                                 >0.99              0.01
+                                   House Price Forecasts
+                                 Panel a (lhs)     Panel a (rhs)
+----------------------------------------------------------------
+Figure 2                                  0.09              0.03
+================================================================
+Note: The table reports p-values from the Likelihood Ratio test by
+Silvapulle and Sen (2005) of monotonically declining regression
+coefficients (H0: monotonic decline) against the alternative (HA:
+non-monotonicity) using the SCE data discussed in Section 2. Results
+are reported using 10,000 draws from a semi-nonparametric Bollen-Stine
+bootstrap procedure.

@@ -1,0 +1,21 @@
+Table A.10: Macroeconomic Expectations in the SCE and SPF
+======================================================
+                   Panel a: Unemployment Rate
+                 Median Forecast Std. Dev. of Forecast
+------------------------------------------------------
+SCE                        39.00                 22.87
+SPF                        32.13                 21.89
+======================================================
+                                     Panel b: Inflation
+           Median Abs. Error  Std. Dev. of Error      Median IQR  Std. Dev. of IQR
+----------------------------------------------------------------------------------
+SCE                     1.61                2.93            2.00              4.48
+SPF                     0.51                0.82            0.50              0.34
+==================================================================================
+Note: The table shows moments of the individual probability distributions
+from the Survey of Consumer Expectations (SCE) and the Survey of
+Professional Forecasters (SPF). Panel a shows the median and standard
+deviation of individual unemployment forecasts. Panel b shows the median
+error of individual inflation forecasts (column 2), the standard deviation
+of these errors (column 3), the median interquartile ranges derived from
+individual distributions (column 4), and their standard deviation (column 5).
